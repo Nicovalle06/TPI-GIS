@@ -6,8 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
-  },
+    "dev": "nodemon index.js"  },
   "keywords": [],
   "author": "GIS Students",
   "license": "ISC",
@@ -20,7 +19,6 @@
     "express": "^4.18.2",
     "helmet": "^7.1.0",
     "pg": "^8.11.3",
-    "pg-hstore": "^2.3.4",
-    "server": "file:"
+    "pg-hstore": "^2.3.4"
   }
 }
