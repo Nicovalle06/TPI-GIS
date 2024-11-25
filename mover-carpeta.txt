@@ -1,1 +1,0 @@
-sudo mv Downloads/ol-lab /var/www/html/
