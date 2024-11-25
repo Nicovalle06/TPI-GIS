@@ -30,7 +30,8 @@ import { getMarkers } from "../services/mapService";
 import GeoJSON from 'ol/format/GeoJSON'
 import Modal from "./Modal/Modal";
 
-const url = `http://qgis.demo/cgi-bin/qgis_mapserv.fcgi?MAP=/home/qgis/projects/TPI.qgz`;
+// const url = `http://qgis.demo/cgi-bin/qgis_mapserv.fcgi?MAP=/home/qgis/projects/TPI.qgz`;
+const url = `http://localhost/cgi-bin/qgis_mapserv.fcgi?map=/usr/local/share/qgis/trabajo-integrador.qgz` ;
 
 function Home() {
   const [loading, setLoading] = useState(true); // cambiar a true
