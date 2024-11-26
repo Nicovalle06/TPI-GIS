@@ -41,11 +41,17 @@ export default function FrontPage() {
         </div>
         <div className="w-[100%] ">
           <h3 className="font-bold mb-1">Alumnos</h3>
-          {students.map((student) => (
+          {/* {students.map((student) => (
             <h4 className="" key={student.students}>
               {student.students}
             </h4>
-          ))}
+          ))} */}
+
+          <h4>Angeloff, César</h4>
+          <h4>Di Nubila, Vicente</h4>
+          <h4>Pallarés Ulises</h4>
+          <h4>Vallejos Zabala, Nicolás</h4>
+          <h4>Vera, Cristian</h4>
         </div>
       </div>
       <div className="mt-10">
