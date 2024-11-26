@@ -98,14 +98,9 @@ const AddMarkerInteraction = ({ markersLayerSource }) => {
   return (
     <form ref={popUpRef} onSubmit={handleSubmit}>
       {isShown && (
-        <div className="bgRed p-5 rounded-lg gap-3 flex flex-col">
+        <div className="bg-[#2C8281] p-5 rounded-lg gap-3 flex flex-col">
           <div className="flex flex-col gap-2">
-            <label
-              className="bg-red-300 rounded-md p-1.5 text-black"
-              htmlFor="name"
-            >
-              Nombre del lugar
-            </label>
+
             <input
               className=" p-1.5 rounded-md text-black"
               type="text"
@@ -115,12 +110,7 @@ const AddMarkerInteraction = ({ markersLayerSource }) => {
             />
           </div>
           <div className="flex flex-col gap-2">
-            <label
-              className="bg-red-300 rounded-md p-1.5 text-black"
-              htmlFor="description"
-            >
-              Descripción
-            </label>
+
             <input
               className=" p-1.5 rounded-md text-black"
               type="text"
@@ -130,13 +120,13 @@ const AddMarkerInteraction = ({ markersLayerSource }) => {
             />
           </div>
           <button
-            className="bg-red-300 rounded-md p-2 text-black"
+            className="bg-blue-300  rounded-md p-2 text-black"
             type="submit"
           >
             Guardar
           </button>
           <button
-            className="bg-red-800 text-black rounded-full py-3 px-4 absolute -top-5 -right-4 text-xs"
+            className="bg-red-300 text-black rounded-full py-3 px-4 absolute -top-5 -right-4 text-xs"
             type="button"
             onClick={handleRemoveMarker}
           >
