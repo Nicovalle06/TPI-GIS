@@ -48,7 +48,7 @@ const DragBoxInteraction = () => {
     if (!map) return
 
     const dragBox = new DragBox({
-      className: 'bg-red-500 opacity-50',
+      className: 'bg-[#2C8281] opacity-50',
       condition: always
     })
 

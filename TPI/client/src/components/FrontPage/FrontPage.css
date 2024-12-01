@@ -1,9 +1,25 @@
 .frontpage{
     margin: 0;
     padding: 0;
-    background-image: url("../../assets/background3.png"); 
+    background-image: url("../../assets/imagen-mundo.jpeg"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
 }
+
+.btn-ingreso {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+}
+
+.btn-ingreso:hover {
+    background-color: #223094;
+}
+
+.box {
+    inline-size: 200px;
+    writing-mode: horizontal-tb;
+}
+  
