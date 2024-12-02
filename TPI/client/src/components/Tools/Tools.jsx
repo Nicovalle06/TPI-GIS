@@ -68,22 +68,48 @@ function Tools() {
     document.getElementById("open-btn").style.display = "block";
   }
 
-  return (
-    <>
-      <div id="toolbar" className="flex justify-center w-[7%]">
-        <div id="open-btn" onClick={openNav}>
-          ☰
-        </div>
-      </div>
-      <div id="sidebar" className="sidebar">
-        <div className="closebtn">
-          <span onClick={closeNav}>×</span>
-        </div>
+  // return (
+  //   <>
+  //     <div id="toolbar" className="flex justify-center w-[7%]">
+  //       <div id="open-btn" onClick={openNav}>
+  //         ☰
+  //       </div>
+  //     </div>
+  //     <div id="sidebar" className="sidebar">
+  //       <div className="closebtn">
+  //         <span onClick={closeNav}>×</span>
+  //       </div>
 
+  //       {options.map((option, index) => (
+  //         <div
+  //           key={index}
+  //           className={`flex flex-col justify-center items-center tool p-2
+  //           ${option.selected ? "bg-slate-500" : ""}
+  //       `}
+  //           onClick={() => {
+  //             toggleSelection(option.id);
+  //           }}
+  //           onMouseEnter={() => onMouseEnter(option.id)}
+  //           onMouseLeave={() => onMouseLeave(option.id)}
+  //         >
+  //           {selectOptionIcons(option.id)}
+  //           <h3>{option.name}</h3>
+  //         </div>
+  //       ))}
+  //     </div>
+  //   </>
+  // );
+
+
+  return (
+    <div>
+      {/* Sidebar Fijo */}
+      <div className="sidebar-fixed">
+        <ul>
         {options.map((option, index) => (
           <div
             key={index}
-            className={`flex flex-col justify-center items-center tool p-2
+            className={`sidebar-item flex flex-col justify-center items-center tool p-2
             ${option.selected ? "bg-slate-500" : ""}
         `}
             onClick={() => {
@@ -96,8 +122,9 @@ function Tools() {
             <h3>{option.name}</h3>
           </div>
         ))}
+        </ul>
       </div>
-    </>
+    </div>
   );
 }
 

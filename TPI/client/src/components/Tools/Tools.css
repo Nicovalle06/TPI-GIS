@@ -1,60 +1,29 @@
-.tool:hover {
-  background-color: #adadad79;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-  box-shadow: 0 0 5px #888888;
-}
-
-
-#sidebar {
-  height: 100%;
-  width: 0;
+/* Sidebar fijo a la derecha */
+.sidebar-fixed {
   position: fixed;
   top: 0;
   right: 0;
-  --tw-bg-opacity: 1;
+  height: 100%;
+  width: 150px; /* Ajusta el ancho según sea necesario */
   background-color: #2C8281;
+  color: #fff; /* Color de texto */
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
-  transition: 0.5s;
-  z-index: 1;
+  align-items: flex-start;
+  padding-top: 20px; /* Espaciado superior */
+  z-index: 1000; /* Asegura que se muestre por encima de otros elementos */
 }
 
-#sidebar div {
-  color: white;
-  transition: 0.3s;
-}
-
-#sidebar .closebtn {
+/* Estilo de los items del sidebar */
+.sidebar-item {
+  padding: 15px;
   display: flex;
-  justify-content: left;
-  font-size: 50px;
-  margin-right: 2rem;
-}
-
-#sidebar .closebtn span{
-    cursor: pointer;
-}
-
-#toolbar {
-  position: fixed;
-  top: 20px;  /* Ajusta la distancia desde la parte superior */
-  right: 20px;  /* Ajusta la distancia desde la parte derecha */
-  padding: 16px;
-  --tw-bg-opacity: 1;
-  color: white;
-  background-color: #2c828100;
-  z-index: 999;  /* Para asegurarse de que quede encima de otros elementos */
-  border-radius: 5px;
-}
-
-#open-btn {
-  font-size: 30px;
+  align-items: center;
+  gap: 20px;
   cursor: pointer;
-  position: fixed;
-  top: 20px;  /* Ajusta la distancia desde la parte superior */
-  right: 20px;  /* Ajusta la distancia desde la parte derecha */
-  z-index: 999;  /* Asegura que esté por encima de otros elementos */
+  border-bottom: 1px solid #e4d7d748;
+}
+
+.sidebar-item:hover {
+  background-color: #3fb0b64f;
 }

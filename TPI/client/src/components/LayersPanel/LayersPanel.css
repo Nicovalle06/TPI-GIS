@@ -1,9 +1,9 @@
 .panel.left {
-  position: fixed ;
+  position: absolute ;
   --tw-bg-opacity: 1;
   background-color: #2C8281;
   top: 20px;
-  left: 20px;
+  left: 15px;
   padding: 10px 20px;
   cursor: pointer;
   color: white;
@@ -19,7 +19,7 @@
 
 #options-container {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 70px;
   bottom: 280px; /* Ajusta según el espacio entre la parte inferior y las escalas */
   left: 20px;  /* Ajusta según lo necesites */
