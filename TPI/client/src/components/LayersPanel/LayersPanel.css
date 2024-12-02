@@ -1,4 +1,4 @@
-.panel {
+.panel.left {
   position: absolute;
   --tw-bg-opacity: 1;
   background-color: #2C8281;

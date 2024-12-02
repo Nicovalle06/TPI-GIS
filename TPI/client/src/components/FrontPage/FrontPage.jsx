@@ -5,7 +5,7 @@ import "./FrontPage.css";
 import PacmanLoader from "react-spinners/PacmanLoader";
 
 
-export default function FrontPage() {
+export default function FrontPage({ onEnterClick }) {
   const [students, setStudents] = useState([]);
 
   // useEffect(() => {
@@ -58,7 +58,7 @@ export default function FrontPage() {
 
     {/* Botón */}
     <div className="absolute bottom-40">
-      <button className="btn-ingreso px-10 py-4 bg-green-#2C8281 rounded hover:bg-blue-#223094">
+      <button className="btn-ingreso px-10 py-4 bg-green-#2C8281 rounded hover:bg-blue-#2089AB" onClick={onEnterClick} > 
         Ingresar
       </button>
     </div>

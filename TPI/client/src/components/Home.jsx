@@ -32,10 +32,11 @@ import Modal from "./Modal/Modal";
 
 // const url = `http://qgis.demo/cgi-bin/qgis_mapserv.fcgi?MAP=/home/qgis/projects/TPI.qgz`;
 const url = `http://localhost/cgi-bin/qgis_mapserv.fcgi?map=/usr/local/share/qgis/trabajo-integrador.qgz` ;
-//comment
 
 function Home() {
-  const [loading, setLoading] = useState(true); // cambiar a true
+  // const [loading, setLoading] = useState(true); // cambiar a true
+  const [userEntered, setUserEntered] = useState(false); // Maneja el estado de ingreso del usuario
+
   const availableLayers = useSelector((store) => store.layers.availableLayers);
   const consultLayer = useSelector(state => state.consultLayer.consults)
 
@@ -102,6 +103,12 @@ function Home() {
   // }, []);
 
 
+   // Función para manejar el clic en "Ingresar"
+   const handleEnterClick = () => {
+    setUserEntered(true); // Cambia el estado a "ingresado"
+  };
+
+
   useEffect(() => {
     (async function () {
       const response = await getMarkers()
@@ -145,9 +152,9 @@ function Home() {
 
   return (
     <div className="flex flex-row w-[100wh] min-h-[100vh] bg-[#0B4F6C] ">
-      {loading ? (
+      {!userEntered ? (
         <div className="w-[100%] h-[100vh] flex justify-center items-start frontpage">
-          <FrontPage />
+          <FrontPage onEnterClick={handleEnterClick} />
         </div>
       ) : (
         <>

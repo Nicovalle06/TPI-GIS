@@ -1,25 +1,78 @@
-.frontpage{
+.frontpage {
     margin: 0;
     padding: 0;
-    background-image: url("../../assets/imagen-mundo.jpeg"); 
+    background-image: linear-gradient(rgba(32, 32, 102, 0.356), rgba(36, 36, 119, 0.315)), /* Filtro azul con opacidad */
+    url("../../assets/imagen-mundo.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
 }
 
 .btn-ingreso {
-    background-color: #199319;
+    background-color: #2089AB;
     color: white;
     padding: 15px 25px;
+    border: #C9F5FF;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
 }
 
+
 .btn-ingreso:hover {
-    background-color: #223094;
+    background-color: #12345F;
 }
 
 .box {
     inline-size: 200px;
     writing-mode: horizontal-tb;
 }
-  
+
+/* Ajustar la imagen del logo */
+.frontpage .utn-logo {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translateX(0);
+    width: 300px;
+    height: 100px;
+    object-fit: contain;
+}
+
+/* Ajustar la sección de título */
+.frontpage h2 {
+    font-size: 36px;
+    font-weight: bold;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.frontpage h3 {
+    font-size: 36px;
+}
+
+.frontpage h4 {
+    font-size: 18px;
+}
+
+/* Ajustar la sección de profesores y alumnos */
+.frontpage .profesores-alumnos {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 16px;
+    width: 60%;
+}
+
