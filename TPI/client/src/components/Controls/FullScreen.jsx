@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from 'react'
 import { FullScreen } from 'ol/control'
 import MapContext from '../Maps/MapContext'
 
+
 const FullScreenMap = () => {
   const {map} = useContext(MapContext)
 
