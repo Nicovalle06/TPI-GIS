@@ -7,7 +7,7 @@ const assignZIndex = (layer) => {
   if (layer.match(/(Puntos|Edif|Edificio|Edificios|Complejo|Veg|Infraestructura|Estructuras|Red|Salvado|Señalizaciones|Marcas|Vias|Obra|Actividades|Curvas)/)) {
     return 2;
   }
-  if (layer.match(/(Provincias|Pais)/)) {
+  if (layer.match(/(Pais)/)) {
     return 1;
   }
   return 3;

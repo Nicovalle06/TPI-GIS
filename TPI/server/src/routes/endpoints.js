@@ -4,11 +4,11 @@ const { Pool } = pg;
 
 const router = express.Router();
 
-const user = "postgres";
-const password = "admin123";
+const user = "user";
+const password = "user";
 const host = "localhost";
 const port = 5432;
-const database = "TPI";
+const database = "database_tpi";
 
 // Endpoints
 router.get("/", (req, res) => {
