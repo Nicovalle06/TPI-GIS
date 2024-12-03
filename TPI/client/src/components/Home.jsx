@@ -151,7 +151,7 @@ function Home() {
   };
 
   return (
-    <div className="flex flex-row w-[100wh] min-h-[100vh] bg-[#48B7A9] ">
+    <div className="flex flex-row w-[100wh] min-h-[100vh] bg-[#2c8180de] ">
       {!userEntered ? (
         <div className="w-[100%] h-[100vh] flex justify-center items-start frontpage">
           <FrontPage onEnterClick={handleEnterClick} />

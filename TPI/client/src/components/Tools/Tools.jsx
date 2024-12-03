@@ -1,9 +1,9 @@
-import { MdAdsClick } from "react-icons/md";
-import { TbRulerMeasure } from "react-icons/tb";
+import { IoNavigateCircleOutline } from "react-icons/io5";
+import { TbDatabaseSearch } from "react-icons/tb";
+import { TfiRulerAlt2 } from "react-icons/tfi";
+import { TbMapPinPlus } from "react-icons/tb";
+import { TbMapPinX } from "react-icons/tb";
 import { LiaBroomSolid } from "react-icons/lia";
-import { BsNewspaper } from "react-icons/bs";
-import { RiMapPinAddLine } from "react-icons/ri";
-import { LuMapPinOff } from "react-icons/lu";
 import { TbPolygon } from "react-icons/tb";
 import { TbPolygonOff } from "react-icons/tb";
 
@@ -14,15 +14,15 @@ import { setToFalse, toggleSelectedOption } from "../../redux/features/interacti
 const selectOptionIcons = (option) => {
   switch (option) {
     case "navigation":
-      return <MdAdsClick className="w-[30px] h-[30px]" />;
+      return <IoNavigateCircleOutline  className="w-[30px] h-[30px]" />;
     case "measurement":
-      return <TbRulerMeasure className="w-[30px] h-[30px]" />;
+      return <TfiRulerAlt2  className="w-[30px] h-[30px]" />;
     case "consultation":
-      return <BsNewspaper className="w-[30px] h-[30px]" />;
+      return <TbDatabaseSearch  className="w-[30px] h-[30px]" />;
     case "addMarker":
-      return <RiMapPinAddLine className="w-[30px] h-[30px]" />;
+      return <TbMapPinPlus  className="w-[30px] h-[30px]" />;
     case "removeMarker":
-      return <LuMapPinOff className="w-[30px] h-[30px]" />;
+      return <TbMapPinX  className="w-[30px] h-[30px]" />;
     case "addPolygon":
       return <TbPolygon className="w-[30px] h-[30px]" />;
     case "removePolygon":
@@ -67,39 +67,6 @@ function Tools() {
     document.getElementById("toolbar").style.marginLeft = "0";
     document.getElementById("open-btn").style.display = "block";
   }
-
-  // return (
-  //   <>
-  //     <div id="toolbar" className="flex justify-center w-[7%]">
-  //       <div id="open-btn" onClick={openNav}>
-  //         ☰
-  //       </div>
-  //     </div>
-  //     <div id="sidebar" className="sidebar">
-  //       <div className="closebtn">
-  //         <span onClick={closeNav}>×</span>
-  //       </div>
-
-  //       {options.map((option, index) => (
-  //         <div
-  //           key={index}
-  //           className={`flex flex-col justify-center items-center tool p-2
-  //           ${option.selected ? "bg-slate-500" : ""}
-  //       `}
-  //           onClick={() => {
-  //             toggleSelection(option.id);
-  //           }}
-  //           onMouseEnter={() => onMouseEnter(option.id)}
-  //           onMouseLeave={() => onMouseLeave(option.id)}
-  //         >
-  //           {selectOptionIcons(option.id)}
-  //           <h3>{option.name}</h3>
-  //         </div>
-  //       ))}
-  //     </div>
-  //   </>
-  // );
-
 
   return (
     <div>

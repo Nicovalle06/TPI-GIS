@@ -1,7 +1,7 @@
 .panel.left {
   position: absolute ;
   --tw-bg-opacity: 1;
-  background-color: #2C8281;
+  background-color: #2c8281d2;
   top: 20px;
   left: 15px;
   padding: 10px 20px;
@@ -24,7 +24,7 @@
   bottom: 280px; /* Ajusta según el espacio entre la parte inferior y las escalas */
   left: 20px;  /* Ajusta según lo necesites */
   --tw-bg-opacity: 1;
-  background-color: #2C8281;
+  background-color: #2c8281cc;
 
   
 }

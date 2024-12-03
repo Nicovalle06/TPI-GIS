@@ -52,7 +52,7 @@ function LayersPanel() {
     <>
       <div className="panel left" id="toggleButton" onClick={toggleButton}>
         <FiLayers />
-        <p className="text-lg">Seleccionar Capas</p>
+        <p className="text-lg">Menu de Capas</p>
       </div>
 
       <div

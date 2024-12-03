@@ -29,11 +29,7 @@ export const interactionsSlice = createSlice({
         selected: false,
         name: "Eliminar Marcador"
       },
-      // {
-      //   id: "removeAll",
-      //   selected: false,
-      //   name: "Eliminar Todo"
-      // }
+      
     ],
   },
   reducers: {

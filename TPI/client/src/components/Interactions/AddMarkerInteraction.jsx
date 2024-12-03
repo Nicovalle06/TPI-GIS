@@ -106,7 +106,7 @@ const AddMarkerInteraction = ({ markersLayerSource }) => {
               type="text"
               name="name"
               required
-              placeholder="Nombre del lugar"
+              placeholder="Nombre marcador"
             />
           </div>
           <div className="flex flex-col gap-2">
@@ -115,12 +115,18 @@ const AddMarkerInteraction = ({ markersLayerSource }) => {
               className=" p-1.5 rounded-md text-black"
               type="text"
               name="description"
-              placeholder="Descripción"
+              placeholder="Breve descripción"
               required
             />
           </div>
           <button
-            className="bg-blue-300  rounded-md p-2 text-black"
+            style={{
+              backgroundColor: "#12345F", // Color de fondo
+              color: "#97B4B4",              // Color del texto
+              padding: "10px",
+              borderRadius: "5px",
+            }}
+
             type="submit"
           >
             Guardar
