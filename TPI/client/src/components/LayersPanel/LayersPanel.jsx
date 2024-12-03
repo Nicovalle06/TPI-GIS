@@ -68,7 +68,7 @@ function LayersPanel() {
           className="mb-6 rounded-md px-3 py-2 w-full text-black"
           onChange={handleFilter}
         />
-        <div className="overflow-auto sm:h-80 h-40 w-full  ">
+        <div className="overflow-auto sm:h-80 h-70 w-full  ">
           {filterLayers?.map((layer) => (
             <div
               key={layer.name}

@@ -10,39 +10,6 @@ const host = "localhost";
 const port = 5432;
 const database = "database_tpi";
 
-// Endpoints
-router.get("/", (req, res) => {
-  res.send("Hello World!");
-});
-
-router.get("/students", async (req, res) => {
-  const pool = new Pool({
-    user: user,
-    password: password,
-    host: host,
-    port: port,
-    database: database,
-  });
-
-  const client = await pool.connect();
-  try {
-    await client.query("BEGIN");
-
-    const queryText = 'SELECT * FROM "prueba"';
-    const { rows } = await client.query(queryText);
-    await client.query("COMMIT");
-
-    console.log(rows);
-
-    res.status(200).send(rows);
-  } catch (error) {
-    await client.query("ROLLBACK");
-    console.error("Error al obtener Students:", error);
-    res.status(500).send("Error interno del servidor");
-  } finally {
-    client.release();
-  }
-});
 
 // Endpoint para obtener Markers
 router.get("/markers", async (req, res) => {
@@ -133,7 +100,6 @@ router.post("/intersect", async (req, res) => {
   const client = await pool.connect();
   try {
     const { layersLW, coords } = req.body;
-    // const { layers, coords } = req.body;
     console.log(req.body);
     const layersNames = layersLW.map((layer) => layer.sourceName);
     let wkt = "";

@@ -2,7 +2,6 @@ import Tools from "./Tools/Tools";
 import "./Home.css";
 import Map from "./Maps/Map";
 import LayersPanel from "./LayersPanel/LayersPanel";
-// import Leyend from "./Leyend/Leyend";
 import Controls from "./Controls/Controls";
 import ScaleMap from "./Controls/ScaleMap";
 import FullScreenMap from "./Controls/FullScreen";
@@ -34,8 +33,8 @@ import Modal from "./Modal/Modal";
 const url = `http://localhost/cgi-bin/qgis_mapserv.fcgi?map=/usr/local/share/qgis/trabajo-integrador.qgz` ;
 
 function Home() {
-  // const [loading, setLoading] = useState(true); // cambiar a true
-  const [userEntered, setUserEntered] = useState(false); // Maneja el estado de ingreso del usuario
+
+  const [userEntered, setUserEntered] = useState(false); 
 
   const availableLayers = useSelector((store) => store.layers.availableLayers);
   const consultLayer = useSelector(state => state.consultLayer.consults)
@@ -92,16 +91,6 @@ function Home() {
         }),
       }),
     });
-
-  // front page loading
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setLoading(false);
-  //   }, 2500);
-
-  //   return () => clearTimeout(timer);
-  // }, []);
-
 
    // Función para manejar el clic en "Ingresar"
    const handleEnterClick = () => {
