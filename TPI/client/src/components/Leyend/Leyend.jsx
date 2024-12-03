@@ -37,7 +37,8 @@ console.log(visibleLayers)
           <h6 className=' rounded-md p-2 text-black'>
             Leyenda
           </h6>
-          <img className='sm:max-h-[50vh] text-black' src={leyendSource} />
+          {/* <img className='sm:max-h-[50vh] text-black' src={leyendSource} /> */}
+          <img className='sm:max-h-[80vh] text-black' src={leyendSource} />
         </div>}
     </>
   )

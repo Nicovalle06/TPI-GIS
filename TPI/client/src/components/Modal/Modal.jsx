@@ -10,8 +10,8 @@ const Modal = ({ showModal, setShowModal }) => {
     <>
       {showModal && Object.entries(consultLayer).length > 0 && (
         <div className="fixed inset-0 overflow-auto bg-slate-800 bg-opacity-90 flex justify-center items-center z-50">
-          <div className="bgRed w-11/12 max-w-screen-xl h-5/6 p-5 rounded-lg relative shadow-md shadow-slate-500 overflow-hidden">
-            <h6 className="bg-red-600 rounded-md p-2 mb-2 text-white text-2xl">
+          <div className="bgGreen w-11/12 max-w-screen-xl h-5/6 p-5 rounded-lg relative shadow-md shadow-slate-500 overflow-hidden">
+            <h6 className="bg-green-#2C8281 rounded-md p-2 mb-2 text-white text-2xl">
               Consulta de capas:
             </h6>
             <div className="max-h-[80vh] overflow-auto gap-4">
